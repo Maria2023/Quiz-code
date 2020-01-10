@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <a href="highscores.html">View HighScores</a>
+  <div>Time: <span id="time">75</span></div>
+
+  <div class="grid">
+
+    <div id="quiz">
+      <h1> Quiz</h1>
+    </div>
+
+    <hr style="margin-top: 40px"><br><br>
+
+    <!-- <div class="Button">
+      <p> <strong>Question: <text id="number1">0</text><strong></p>
+      <p> <strong>Score: <text id="Score1">0</text><strong></p>
+    </div> -->
+
+
+    <div id="instructions-container">
+      <p>Description and Instructions</p>
+      <!-- <div id="answer-button" class="btn-grid"></div> -->
+      <button id="start-btn" class="start-btn btn, Justify-center">Start</button>
+    </div>
+
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+
+      
+     
+    
+
+      <div id="choice1" class="choice">choice 1</div>
+      <div id="choice2" class="choice">choice 2</div>
+      <div id="choice3" class="choice">choice 3</div>
+      <div id="choice4" class="choice">choice 4</div>
+    </div>
+
+
+    <div id="results" class="hide">
+        <h2>Your Score: <span id="score"></span></h2>
+    </div>
+
+
+    <!-- <div class="controls">
+    
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+
+    </div> -->
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+  <script src= "score.js"></script>
+
+</body>
+
+</html>
